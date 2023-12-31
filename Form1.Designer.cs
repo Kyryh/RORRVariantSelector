@@ -63,6 +63,7 @@
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(327, 112);
             checkedListBox1.TabIndex = 0;
+            checkedListBox1.Visible = false;
             // 
             // checkedListBox2
             // 
@@ -73,6 +74,7 @@
             checkedListBox2.Name = "checkedListBox2";
             checkedListBox2.Size = new Size(394, 112);
             checkedListBox2.TabIndex = 1;
+            checkedListBox2.Visible = false;
             // 
             // label2
             // 
@@ -83,6 +85,7 @@
             label2.Size = new Size(104, 28);
             label2.TabIndex = 2;
             label2.Text = "Dried Lake";
+            label2.Visible = false;
             // 
             // label1
             // 
@@ -93,6 +96,7 @@
             label1.Size = new Size(147, 28);
             label1.TabIndex = 3;
             label1.Text = "Desolate Forest";
+            label1.Visible = false;
             // 
             // label3
             // 
@@ -103,6 +107,7 @@
             label3.Size = new Size(138, 28);
             label3.TabIndex = 4;
             label3.Text = "Damp Caverns";
+            label3.Visible = false;
             // 
             // label4
             // 
@@ -113,6 +118,7 @@
             label4.Size = new Size(124, 28);
             label4.TabIndex = 5;
             label4.Text = "Sky Meadow";
+            label4.Visible = false;
             // 
             // label5
             // 
@@ -123,6 +129,7 @@
             label5.Size = new Size(134, 28);
             label5.TabIndex = 6;
             label5.Text = "Ancient Valley";
+            label5.Visible = false;
             // 
             // label6
             // 
@@ -133,6 +140,7 @@
             label6.Size = new Size(130, 28);
             label6.TabIndex = 7;
             label6.Text = "Sunken Tomb";
+            label6.Visible = false;
             // 
             // label7
             // 
@@ -143,6 +151,7 @@
             label7.Size = new Size(156, 28);
             label7.TabIndex = 8;
             label7.Text = "Magma Barracks";
+            label7.Visible = false;
             // 
             // label8
             // 
@@ -153,6 +162,7 @@
             label8.Size = new Size(116, 28);
             label8.TabIndex = 9;
             label8.Text = "Hive Cluster";
+            label8.Visible = false;
             // 
             // label9
             // 
@@ -163,6 +173,7 @@
             label9.Size = new Size(187, 28);
             label9.TabIndex = 10;
             label9.Text = "Temple of the Elders";
+            label9.Visible = false;
             // 
             // checkedListBox3
             // 
@@ -173,6 +184,7 @@
             checkedListBox3.Name = "checkedListBox3";
             checkedListBox3.Size = new Size(331, 112);
             checkedListBox3.TabIndex = 11;
+            checkedListBox3.Visible = false;
             // 
             // checkedListBox4
             // 
@@ -183,6 +195,7 @@
             checkedListBox4.Name = "checkedListBox4";
             checkedListBox4.Size = new Size(390, 112);
             checkedListBox4.TabIndex = 12;
+            checkedListBox4.Visible = false;
             // 
             // checkedListBox5
             // 
@@ -193,6 +206,7 @@
             checkedListBox5.Name = "checkedListBox5";
             checkedListBox5.Size = new Size(331, 112);
             checkedListBox5.TabIndex = 13;
+            checkedListBox5.Visible = false;
             // 
             // checkedListBox6
             // 
@@ -203,6 +217,7 @@
             checkedListBox6.Name = "checkedListBox6";
             checkedListBox6.Size = new Size(390, 112);
             checkedListBox6.TabIndex = 14;
+            checkedListBox6.Visible = false;
             // 
             // label10
             // 
@@ -213,6 +228,7 @@
             label10.Size = new Size(113, 28);
             label10.TabIndex = 15;
             label10.Text = "Risk of Rain";
+            label10.Visible = false;
             // 
             // checkedListBox7
             // 
@@ -223,6 +239,7 @@
             checkedListBox7.Name = "checkedListBox7";
             checkedListBox7.Size = new Size(331, 112);
             checkedListBox7.TabIndex = 16;
+            checkedListBox7.Visible = false;
             // 
             // checkedListBox8
             // 
@@ -233,6 +250,7 @@
             checkedListBox8.Name = "checkedListBox8";
             checkedListBox8.Size = new Size(390, 112);
             checkedListBox8.TabIndex = 17;
+            checkedListBox8.Visible = false;
             // 
             // checkedListBox9
             // 
@@ -243,6 +261,7 @@
             checkedListBox9.Name = "checkedListBox9";
             checkedListBox9.Size = new Size(331, 112);
             checkedListBox9.TabIndex = 18;
+            checkedListBox9.Visible = false;
             // 
             // checkedListBox10
             // 
@@ -253,10 +272,11 @@
             checkedListBox10.Name = "checkedListBox10";
             checkedListBox10.Size = new Size(390, 112);
             checkedListBox10.TabIndex = 19;
+            checkedListBox10.Visible = false;
             // 
             // openFileDialog1
             // 
-            openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileName = "Risk of Rain Returns.exe";
             openFileDialog1.Filter = "RORR executable|*.exe|All files|*.*";
             // 
             // button1
@@ -277,6 +297,7 @@
             button2.TabIndex = 21;
             button2.Text = "Save variants selection";
             button2.UseVisualStyleBackColor = true;
+            button2.Visible = false;
             button2.Click += button2_Click;
             // 
             // button3
@@ -287,6 +308,7 @@
             button3.TabIndex = 22;
             button3.Text = "Restore variants";
             button3.UseVisualStyleBackColor = true;
+            button3.Visible = false;
             button3.Click += button3_Click;
             // 
             // Form1
