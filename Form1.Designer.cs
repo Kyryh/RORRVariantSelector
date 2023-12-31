@@ -257,6 +257,7 @@
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.Filter = "RORR executable|*.exe|All files|*.*";
             // 
             // button1
             // 
@@ -266,6 +267,7 @@
             button1.TabIndex = 20;
             button1.Text = "Load game files";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -275,15 +277,17 @@
             button2.TabIndex = 21;
             button2.Text = "Save variants selection";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.Location = new Point(255, 12);
             button3.Name = "button3";
-            button3.Size = new Size(129, 23);
+            button3.Size = new Size(98, 23);
             button3.TabIndex = 22;
-            button3.Text = "Restore stage variants";
+            button3.Text = "Restore variants";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form1
             // 

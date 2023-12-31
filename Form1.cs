@@ -27,5 +27,22 @@ namespace RORRVariantSelector
             (sender as CheckedListBox)!.ClearSelected();
         }
 
+        // Load game files button
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Save variants selection button
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Restore variants button
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
