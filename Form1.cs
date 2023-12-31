@@ -32,7 +32,7 @@ namespace RORRVariantSelector
             oldSize = Size;
             Size = new Size(300, 300);
             CenterToScreen();
-            
+
         }
 
         private void checkedListBoxGeneral_SelectedIndexChanged(object sender, EventArgs e) {
@@ -57,7 +57,8 @@ namespace RORRVariantSelector
                     panel1.Hide();
                     panel2.Show();
                     CenterToScreen();
-                } else {
+                }
+                else {
                     MessageBox.Show("Wrong executable selected");
                 }
 
@@ -72,6 +73,14 @@ namespace RORRVariantSelector
 
         // Restore variants button
         private void button3_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e) {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e) {
 
         }
     }

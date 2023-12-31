@@ -54,6 +54,8 @@
             panel2 = new Panel();
             panel1 = new Panel();
             button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -265,9 +267,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(177, 12);
+            button1.Location = new Point(23, 12);
             button1.Name = "button1";
-            button1.Size = new Size(100, 40);
+            button1.Size = new Size(134, 40);
             button1.TabIndex = 20;
             button1.Text = "Load game files";
             button1.UseVisualStyleBackColor = true;
@@ -275,7 +277,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(283, 12);
+            button2.Location = new Point(163, 12);
             button2.Name = "button2";
             button2.Size = new Size(134, 40);
             button2.TabIndex = 21;
@@ -285,9 +287,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(423, 12);
+            button3.Location = new Point(303, 12);
             button3.Name = "button3";
-            button3.Size = new Size(98, 40);
+            button3.Size = new Size(134, 40);
             button3.TabIndex = 22;
             button3.Text = "Restore variants";
             button3.UseVisualStyleBackColor = true;
@@ -295,6 +297,8 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(button6);
+            panel2.Controls.Add(button5);
             panel2.Controls.Add(button3);
             panel2.Controls.Add(button2);
             panel2.Controls.Add(button1);
@@ -345,6 +349,26 @@
             button4.Text = "Load game files";
             button4.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            button5.Location = new Point(443, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(134, 40);
+            button5.TabIndex = 23;
+            button5.Text = "Select all";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(583, 12);
+            button6.Name = "button6";
+            button6.Size = new Size(134, 40);
+            button6.TabIndex = 24;
+            button6.Text = "Deselect all";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -391,6 +415,8 @@
         private Panel panel2;
         private Panel panel1;
         private Button button4;
+        private Button button6;
+        private Button button5;
     }
 
 
