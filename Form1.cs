@@ -1,4 +1,6 @@
 #pragma warning disable CS8622
+using System.Collections;
+
 namespace RORRVariantSelector
 {
     public partial class Form1 : Form {
