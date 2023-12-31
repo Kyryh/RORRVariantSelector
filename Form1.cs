@@ -76,12 +76,22 @@ namespace RORRVariantSelector
 
         }
 
+        // Select all botton
         private void button5_Click(object sender, EventArgs e) {
-
+            foreach (CheckedListBox checkedListBox in panel2.Controls.OfType<CheckedListBox>()) {
+                for (int i = 0; i < checkedListBox.Items.Count; i++) {
+                    checkedListBox.SetItemChecked(i, true);
+                }
+            }
         }
 
+        // Deselect all button
         private void button6_Click(object sender, EventArgs e) {
-
+            foreach (CheckedListBox checkedListBox in panel2.Controls.OfType<CheckedListBox>()) {
+                for (int i = 0; i < checkedListBox.Items.Count; i++) {
+                    checkedListBox.SetItemChecked(i, false);
+                }
+            }
         }
     }
 }
