@@ -5,8 +5,6 @@ namespace RORRVariantSelector
 
         private string? stagesFolder;
 
-        private string? stagesBackup;
-
         private Size oldSize;
         public Form1() {
             InitializeComponent();
@@ -25,10 +23,8 @@ namespace RORRVariantSelector
 
         private void Form1_Load(object sender, EventArgs e) {
             string currentPath = Path.GetDirectoryName(Application.ExecutablePath)! + Path.DirectorySeparatorChar;
-
-            if (Path.Exists(currentPath + "stages")) {
-                stagesBackup = currentPath + "stages" + Path.DirectorySeparatorChar;
-            }
+            Directory.CreateDirectory("stages");
+            
             oldSize = Size;
             Size = new Size(300, 300);
             CenterToScreen();
@@ -42,23 +38,26 @@ namespace RORRVariantSelector
         // Load game files button
         private void button1_Click(object sender, EventArgs e) {
             if (openFileDialog1.ShowDialog() == DialogResult.OK) {
-                //Console.WriteLine(openFileDialog1.FileName);
                 string stages = Path.GetDirectoryName(openFileDialog1.FileName) +
                     Path.DirectorySeparatorChar + "data" +
                     Path.DirectorySeparatorChar + "stages" +
                     Path.DirectorySeparatorChar;
-                //MessageBox.Show(
-                //    stages
-                //);
 
                 if (Path.Exists(stages)) {
                     stagesFolder = stages;
+                    foreach (string stage in GetAllStageVariantsNames()) {
+                        try {
+                            File.Copy(stagesFolder + stage, "stages" + Path.DirectorySeparatorChar + stage);
+                        } catch (IOException) { }
+                        // raises an exception when the files have already
+                        // been stored, so we don't need to copy them again
+                    }
+
                     Size = oldSize;
                     panel1.Hide();
                     panel2.Show();
                     CenterToScreen();
-                }
-                else {
+                } else {
                     MessageBox.Show("Wrong executable selected");
                 }
 
@@ -73,7 +72,10 @@ namespace RORRVariantSelector
 
         // Restore variants button
         private void button3_Click(object sender, EventArgs e) {
-
+            foreach (string stage in GetAllStageVariantsNames()) {
+                File.Copy("stages" + Path.DirectorySeparatorChar + stage, stagesFolder + stage, true);
+            }
+            MessageBox.Show("Stage variants restored to default");
         }
 
         // Select all botton
@@ -92,6 +94,24 @@ namespace RORRVariantSelector
                     checkedListBox.SetItemChecked(i, false);
                 }
             }
+        }
+
+        private string[] GetAllStageVariantsNames() {
+            List<string> stageVariantsNames = new List<string>();
+            for (int i = 1; i <= 6; i++) {
+                stageVariantsNames.Add($"desolateForest_{i}.rorlvl");
+                stageVariantsNames.Add($"driedLake_{i}.rorlvl");
+                stageVariantsNames.Add($"dampCaverns_{i}.rorlvl");
+                stageVariantsNames.Add($"skyMeadow_{i}.rorlvl");
+                stageVariantsNames.Add($"ancientValley_{i}.rorlvl");
+                stageVariantsNames.Add($"sunkenTombs_{i}.rorlvl");
+                stageVariantsNames.Add($"magmaBarracks_{i}.rorlvl");
+                stageVariantsNames.Add($"hiveCluster_{i}.rorlvl");
+                stageVariantsNames.Add($"templeOfTheElders_{i}.rorlvl");
+            }
+            stageVariantsNames.Add($"riskOfRain_1.rorlvl");
+            stageVariantsNames.Add($"riskOfRain_2.rorlvl");
+            return stageVariantsNames.ToArray();
         }
     }
 }

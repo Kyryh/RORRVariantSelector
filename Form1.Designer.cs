@@ -52,10 +52,10 @@
             button2 = new Button();
             button3 = new Button();
             panel2 = new Panel();
+            button6 = new Button();
+            button5 = new Button();
             panel1 = new Panel();
             button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -136,9 +136,9 @@
             label6.Font = new Font("Segoe UI", 15F);
             label6.Location = new Point(349, 347);
             label6.Name = "label6";
-            label6.Size = new Size(130, 28);
+            label6.Size = new Size(138, 28);
             label6.TabIndex = 7;
-            label6.Text = "Sunken Tomb";
+            label6.Text = "Sunken Tombs";
             // 
             // label7
             // 
@@ -287,7 +287,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(303, 12);
+            button3.Location = new Point(583, 12);
             button3.Name = "button3";
             button3.Size = new Size(134, 40);
             button3.TabIndex = 22;
@@ -329,6 +329,26 @@
             panel2.TabIndex = 23;
             panel2.Visible = false;
             // 
+            // button6
+            // 
+            button6.Location = new Point(443, 12);
+            button6.Name = "button6";
+            button6.Size = new Size(134, 40);
+            button6.TabIndex = 24;
+            button6.Text = "Deselect all";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(303, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(134, 40);
+            button5.TabIndex = 23;
+            button5.Text = "Select all";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // panel1
             // 
             panel1.Controls.Add(button4);
@@ -349,26 +369,6 @@
             button4.Text = "Load game files";
             button4.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            button5.Location = new Point(443, 12);
-            button5.Name = "button5";
-            button5.Size = new Size(134, 40);
-            button5.TabIndex = 23;
-            button5.Text = "Select all";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
-            // 
-            // button6
-            // 
-            button6.Location = new Point(583, 12);
-            button6.Name = "button6";
-            button6.Size = new Size(134, 40);
-            button6.TabIndex = 24;
-            button6.Text = "Deselect all";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -377,6 +377,8 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             Text = "RORRVariantSelector";
             Load += Form1_Load;
