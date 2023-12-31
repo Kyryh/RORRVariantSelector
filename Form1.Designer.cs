@@ -26,8 +26,7 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             checkedListBox1 = new CheckedListBox();
             checkedListBox2 = new CheckedListBox();
             label2 = new Label();
@@ -52,6 +51,11 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            panel2 = new Panel();
+            panel1 = new Panel();
+            button4 = new Button();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // checkedListBox1
@@ -59,220 +63,200 @@
             checkedListBox1.CheckOnClick = true;
             checkedListBox1.FormattingEnabled = true;
             checkedListBox1.Items.AddRange(new object[] { "1", "2 (Artifact of Honor)", "3 (Artifact of Honor, Commando Prism)", "4 (Artifact of Cognation)", "5", "6 (Environment Log)" });
-            checkedListBox1.Location = new Point(9, 86);
+            checkedListBox1.Location = new Point(12, 86);
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(327, 112);
             checkedListBox1.TabIndex = 0;
-            checkedListBox1.Visible = false;
             // 
             // checkedListBox2
             // 
             checkedListBox2.CheckOnClick = true;
             checkedListBox2.FormattingEnabled = true;
             checkedListBox2.Items.AddRange(new object[] { "1 (Artifact of Kin)", "2 (Artifact of Kin, Environment Log)", "3 (Artifact of Kin, Artificer Prism)", "4 ", "5", "6" });
-            checkedListBox2.Location = new Point(342, 86);
+            checkedListBox2.Location = new Point(345, 86);
             checkedListBox2.Name = "checkedListBox2";
             checkedListBox2.Size = new Size(394, 112);
             checkedListBox2.TabIndex = 1;
-            checkedListBox2.Visible = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(342, 55);
+            label2.Location = new Point(345, 55);
             label2.Name = "label2";
             label2.Size = new Size(104, 28);
             label2.TabIndex = 2;
             label2.Text = "Dried Lake";
-            label2.Visible = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(9, 55);
+            label1.Location = new Point(12, 55);
             label1.Name = "label1";
             label1.Size = new Size(147, 28);
             label1.TabIndex = 3;
             label1.Text = "Desolate Forest";
-            label1.Visible = false;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15F);
-            label3.Location = new Point(9, 201);
+            label3.Location = new Point(12, 201);
             label3.Name = "label3";
             label3.Size = new Size(138, 28);
             label3.TabIndex = 4;
             label3.Text = "Damp Caverns";
-            label3.Visible = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15F);
-            label4.Location = new Point(342, 201);
+            label4.Location = new Point(345, 201);
             label4.Name = "label4";
             label4.Size = new Size(124, 28);
             label4.TabIndex = 5;
             label4.Text = "Sky Meadow";
-            label4.Visible = false;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 15F);
-            label5.Location = new Point(7, 347);
+            label5.Location = new Point(10, 347);
             label5.Name = "label5";
             label5.Size = new Size(134, 28);
             label5.TabIndex = 6;
             label5.Text = "Ancient Valley";
-            label5.Visible = false;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 15F);
-            label6.Location = new Point(346, 347);
+            label6.Location = new Point(349, 347);
             label6.Name = "label6";
             label6.Size = new Size(130, 28);
             label6.TabIndex = 7;
             label6.Text = "Sunken Tomb";
-            label6.Visible = false;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 15F);
-            label7.Location = new Point(9, 493);
+            label7.Location = new Point(12, 493);
             label7.Name = "label7";
             label7.Size = new Size(156, 28);
             label7.TabIndex = 8;
             label7.Text = "Magma Barracks";
-            label7.Visible = false;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 15F);
-            label8.Location = new Point(346, 493);
+            label8.Location = new Point(349, 493);
             label8.Name = "label8";
             label8.Size = new Size(116, 28);
             label8.TabIndex = 9;
             label8.Text = "Hive Cluster";
-            label8.Visible = false;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 15F);
-            label9.Location = new Point(9, 639);
+            label9.Location = new Point(12, 639);
             label9.Name = "label9";
             label9.Size = new Size(187, 28);
             label9.TabIndex = 10;
             label9.Text = "Temple of the Elders";
-            label9.Visible = false;
             // 
             // checkedListBox3
             // 
             checkedListBox3.CheckOnClick = true;
             checkedListBox3.FormattingEnabled = true;
             checkedListBox3.Items.AddRange(new object[] { "1", "2 (Artifact of Distortion)", "3", "4", "5", "6" });
-            checkedListBox3.Location = new Point(9, 232);
+            checkedListBox3.Location = new Point(12, 232);
             checkedListBox3.Name = "checkedListBox3";
             checkedListBox3.Size = new Size(331, 112);
             checkedListBox3.TabIndex = 11;
-            checkedListBox3.Visible = false;
             // 
             // checkedListBox4
             // 
             checkedListBox4.CheckOnClick = true;
             checkedListBox4.FormattingEnabled = true;
             checkedListBox4.Items.AddRange(new object[] { "1", "2 (Artifact of Spite, Loader Prism)", "3", "4", "5", "6" });
-            checkedListBox4.Location = new Point(346, 232);
+            checkedListBox4.Location = new Point(349, 232);
             checkedListBox4.Name = "checkedListBox4";
             checkedListBox4.Size = new Size(390, 112);
             checkedListBox4.TabIndex = 12;
-            checkedListBox4.Visible = false;
             // 
             // checkedListBox5
             // 
             checkedListBox5.CheckOnClick = true;
             checkedListBox5.FormattingEnabled = true;
             checkedListBox5.Items.AddRange(new object[] { "1 (Artifact of Glass)", "2 (Artifact of Glass, Boar Beach, Acrid Prism, Drifter Prism)", "3 (Artifact of Glass)", "4 (Environment Log)", "5", "6" });
-            checkedListBox5.Location = new Point(9, 378);
+            checkedListBox5.Location = new Point(12, 378);
             checkedListBox5.Name = "checkedListBox5";
             checkedListBox5.Size = new Size(331, 112);
             checkedListBox5.TabIndex = 13;
-            checkedListBox5.Visible = false;
             // 
             // checkedListBox6
             // 
             checkedListBox6.CheckOnClick = true;
             checkedListBox6.FormattingEnabled = true;
             checkedListBox6.Items.AddRange(new object[] { "1 (Acrid)", "2 (Acrid)", "3 (Acrid)", "4", "5 (Artifact of Dissonance Shard, Environment Log)", "6" });
-            checkedListBox6.Location = new Point(346, 378);
+            checkedListBox6.Location = new Point(349, 378);
             checkedListBox6.Name = "checkedListBox6";
             checkedListBox6.Size = new Size(390, 112);
             checkedListBox6.TabIndex = 14;
-            checkedListBox6.Visible = false;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 15F);
-            label10.Location = new Point(346, 639);
+            label10.Location = new Point(349, 639);
             label10.Name = "label10";
             label10.Size = new Size(113, 28);
             label10.TabIndex = 15;
             label10.Text = "Risk of Rain";
-            label10.Visible = false;
             // 
             // checkedListBox7
             // 
             checkedListBox7.CheckOnClick = true;
             checkedListBox7.FormattingEnabled = true;
             checkedListBox7.Items.AddRange(new object[] { "1 (Direseeker)", "2 (Direseeker, Huntress Prism)", "3", "4", "5", "6" });
-            checkedListBox7.Location = new Point(9, 524);
+            checkedListBox7.Location = new Point(12, 524);
             checkedListBox7.Name = "checkedListBox7";
             checkedListBox7.Size = new Size(331, 112);
             checkedListBox7.TabIndex = 16;
-            checkedListBox7.Visible = false;
             // 
             // checkedListBox8
             // 
             checkedListBox8.CheckOnClick = true;
             checkedListBox8.FormattingEnabled = true;
             checkedListBox8.Items.AddRange(new object[] { "1 (Artifact of Command, Bloated Survivor)", "2 (Artifact of Command)", "3", "4", "5", "6" });
-            checkedListBox8.Location = new Point(346, 524);
+            checkedListBox8.Location = new Point(349, 524);
             checkedListBox8.Name = "checkedListBox8";
             checkedListBox8.Size = new Size(390, 112);
             checkedListBox8.TabIndex = 17;
-            checkedListBox8.Visible = false;
             // 
             // checkedListBox9
             // 
             checkedListBox9.CheckOnClick = true;
             checkedListBox9.FormattingEnabled = true;
             checkedListBox9.Items.AddRange(new object[] { "1", "2", "3", "4", "5 (Environment Log)", "6" });
-            checkedListBox9.Location = new Point(9, 670);
+            checkedListBox9.Location = new Point(12, 670);
             checkedListBox9.Name = "checkedListBox9";
             checkedListBox9.Size = new Size(331, 112);
             checkedListBox9.TabIndex = 18;
-            checkedListBox9.Visible = false;
             // 
             // checkedListBox10
             // 
             checkedListBox10.CheckOnClick = true;
             checkedListBox10.FormattingEnabled = true;
             checkedListBox10.Items.AddRange(new object[] { "1 (Environment Log, Artifact of Origin)", "2 (Environment Log, Artifact of Origin, Acrid Prism, Mercenary Prism)" });
-            checkedListBox10.Location = new Point(346, 670);
+            checkedListBox10.Location = new Point(349, 670);
             checkedListBox10.Name = "checkedListBox10";
             checkedListBox10.Size = new Size(390, 112);
             checkedListBox10.TabIndex = 19;
-            checkedListBox10.Visible = false;
             // 
             // openFileDialog1
             // 
@@ -281,9 +265,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(9, 12);
+            button1.Location = new Point(177, 12);
             button1.Name = "button1";
-            button1.Size = new Size(100, 23);
+            button1.Size = new Size(100, 40);
             button1.TabIndex = 20;
             button1.Text = "Load game files";
             button1.UseVisualStyleBackColor = true;
@@ -291,59 +275,91 @@
             // 
             // button2
             // 
-            button2.Location = new Point(115, 12);
+            button2.Location = new Point(283, 12);
             button2.Name = "button2";
-            button2.Size = new Size(134, 23);
+            button2.Size = new Size(134, 40);
             button2.TabIndex = 21;
             button2.Text = "Save variants selection";
             button2.UseVisualStyleBackColor = true;
-            button2.Visible = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(255, 12);
+            button3.Location = new Point(423, 12);
             button3.Name = "button3";
-            button3.Size = new Size(98, 23);
+            button3.Size = new Size(98, 40);
             button3.TabIndex = 22;
             button3.Text = "Restore variants";
             button3.UseVisualStyleBackColor = true;
-            button3.Visible = false;
             button3.Click += button3_Click;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(button3);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(button1);
+            panel2.Controls.Add(checkedListBox10);
+            panel2.Controls.Add(checkedListBox9);
+            panel2.Controls.Add(checkedListBox8);
+            panel2.Controls.Add(checkedListBox7);
+            panel2.Controls.Add(label10);
+            panel2.Controls.Add(checkedListBox6);
+            panel2.Controls.Add(checkedListBox5);
+            panel2.Controls.Add(checkedListBox4);
+            panel2.Controls.Add(checkedListBox3);
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(checkedListBox2);
+            panel2.Controls.Add(checkedListBox1);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(752, 791);
+            panel2.TabIndex = 23;
+            panel2.Visible = false;
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(button4);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(752, 791);
+            panel1.TabIndex = 23;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(100, 100);
+            button4.MaximumSize = new Size(100, 40);
+            button4.MinimumSize = new Size(100, 40);
+            button4.Name = "button4";
+            button4.Size = new Size(100, 40);
+            button4.TabIndex = 0;
+            button4.Text = "Load game files";
+            button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(748, 789);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(checkedListBox10);
-            Controls.Add(checkedListBox9);
-            Controls.Add(checkedListBox8);
-            Controls.Add(checkedListBox7);
-            Controls.Add(label10);
-            Controls.Add(checkedListBox6);
-            Controls.Add(checkedListBox5);
-            Controls.Add(checkedListBox4);
-            Controls.Add(checkedListBox3);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label1);
-            Controls.Add(label2);
-            Controls.Add(checkedListBox2);
-            Controls.Add(checkedListBox1);
+            ClientSize = new Size(752, 791);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             Text = "RORRVariantSelector";
             Load += Form1_Load;
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -372,6 +388,9 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Panel panel2;
+        private Panel panel1;
+        private Button button4;
     }
 
 

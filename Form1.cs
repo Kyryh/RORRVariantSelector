@@ -1,13 +1,16 @@
+#pragma warning disable CS8622
 namespace RORRVariantSelector
 {
-    public partial class Form1 : Form
-    {
+    public partial class Form1 : Form {
 
-        public string? stagesFolder;
+        private string? stagesFolder;
 
-        public string? stagesBackup;
+        private string? stagesBackup;
+
+        private Size oldSize;
         public Form1() {
             InitializeComponent();
+            button4.Click += button1_Click;
             checkedListBox1.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
             checkedListBox2.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
             checkedListBox3.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
@@ -26,10 +29,14 @@ namespace RORRVariantSelector
             if (Path.Exists(currentPath + "stages")) {
                 stagesBackup = currentPath + "stages" + Path.DirectorySeparatorChar;
             }
+            oldSize = Size;
+            Size = new Size(300, 300);
+            CenterToScreen();
+            
         }
 
-        private void checkedListBoxGeneral_SelectedIndexChanged(object? sender, EventArgs e) {
-            (sender as CheckedListBox)!.ClearSelected();
+        private void checkedListBoxGeneral_SelectedIndexChanged(object sender, EventArgs e) {
+            ((CheckedListBox)sender).ClearSelected();
         }
 
         // Load game files button
@@ -46,9 +53,10 @@ namespace RORRVariantSelector
 
                 if (Path.Exists(stages)) {
                     stagesFolder = stages;
-                    foreach (Control item in Controls) {
-                        item.Show();
-                    }
+                    Size = oldSize;
+                    panel1.Hide();
+                    panel2.Show();
+                    CenterToScreen();
                 } else {
                     MessageBox.Show("Wrong executable selected");
                 }
