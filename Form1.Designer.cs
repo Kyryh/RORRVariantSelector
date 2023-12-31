@@ -63,7 +63,6 @@
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(327, 112);
             checkedListBox1.TabIndex = 0;
-            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
             // 
             // checkedListBox2
             // 
@@ -332,13 +331,13 @@
         private Label label7;
         private Label label8;
         private Label label9;
+        private Label label10;
         private CheckedListBox checkedListBox1;
         private CheckedListBox checkedListBox2;
         private CheckedListBox checkedListBox3;
         private CheckedListBox checkedListBox4;
         private CheckedListBox checkedListBox5;
         private CheckedListBox checkedListBox6;
-        private Label label10;
         private CheckedListBox checkedListBox7;
         private CheckedListBox checkedListBox8;
         private CheckedListBox checkedListBox9;
