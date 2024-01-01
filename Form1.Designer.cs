@@ -1,4 +1,7 @@
-﻿namespace RORRVariantSelector
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace RORRVariantSelector
 {
     partial class Form1
     {
