@@ -64,7 +64,7 @@
             // 
             checkedListBox1.CheckOnClick = true;
             checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "1", "2 (Artifact of Honor)", "3 (Artifact of Honor, Commando Prism)", "4 (Artifact of Cognation)", "5", "6 (Environment Log)" });
+            checkedListBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox1.Location = new Point(12, 86);
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(327, 112);
@@ -74,7 +74,7 @@
             // 
             checkedListBox2.CheckOnClick = true;
             checkedListBox2.FormattingEnabled = true;
-            checkedListBox2.Items.AddRange(new object[] { "1 (Artifact of Kin)", "2 (Artifact of Kin, Environment Log)", "3 (Artifact of Kin, Artificer Prism)", "4 ", "5", "6" });
+            checkedListBox2.Items.AddRange(new object[] { "1", "2", "3", "4 ", "5", "6" });
             checkedListBox2.Location = new Point(345, 86);
             checkedListBox2.Name = "checkedListBox2";
             checkedListBox2.Size = new Size(394, 112);
@@ -174,7 +174,7 @@
             // 
             checkedListBox3.CheckOnClick = true;
             checkedListBox3.FormattingEnabled = true;
-            checkedListBox3.Items.AddRange(new object[] { "1", "2 (Artifact of Distortion)", "3", "4", "5", "6" });
+            checkedListBox3.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox3.Location = new Point(12, 232);
             checkedListBox3.Name = "checkedListBox3";
             checkedListBox3.Size = new Size(331, 112);
@@ -184,7 +184,7 @@
             // 
             checkedListBox4.CheckOnClick = true;
             checkedListBox4.FormattingEnabled = true;
-            checkedListBox4.Items.AddRange(new object[] { "1", "2 (Artifact of Spite, Loader Prism)", "3", "4", "5", "6" });
+            checkedListBox4.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox4.Location = new Point(349, 232);
             checkedListBox4.Name = "checkedListBox4";
             checkedListBox4.Size = new Size(390, 112);
@@ -194,7 +194,7 @@
             // 
             checkedListBox5.CheckOnClick = true;
             checkedListBox5.FormattingEnabled = true;
-            checkedListBox5.Items.AddRange(new object[] { "1 (Artifact of Glass)", "2 (Artifact of Glass, Boar Beach, Acrid Prism, Drifter Prism)", "3 (Artifact of Glass)", "4 (Environment Log)", "5", "6" });
+            checkedListBox5.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox5.Location = new Point(12, 378);
             checkedListBox5.Name = "checkedListBox5";
             checkedListBox5.Size = new Size(331, 112);
@@ -204,7 +204,7 @@
             // 
             checkedListBox6.CheckOnClick = true;
             checkedListBox6.FormattingEnabled = true;
-            checkedListBox6.Items.AddRange(new object[] { "1 (Acrid)", "2 (Acrid)", "3 (Acrid)", "4", "5 (Artifact of Dissonance Shard, Environment Log)", "6" });
+            checkedListBox6.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox6.Location = new Point(349, 378);
             checkedListBox6.Name = "checkedListBox6";
             checkedListBox6.Size = new Size(390, 112);
@@ -224,7 +224,7 @@
             // 
             checkedListBox7.CheckOnClick = true;
             checkedListBox7.FormattingEnabled = true;
-            checkedListBox7.Items.AddRange(new object[] { "1 (Direseeker)", "2 (Direseeker, Huntress Prism)", "3", "4", "5", "6" });
+            checkedListBox7.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox7.Location = new Point(12, 524);
             checkedListBox7.Name = "checkedListBox7";
             checkedListBox7.Size = new Size(331, 112);
@@ -234,7 +234,7 @@
             // 
             checkedListBox8.CheckOnClick = true;
             checkedListBox8.FormattingEnabled = true;
-            checkedListBox8.Items.AddRange(new object[] { "1 (Artifact of Command, Bloated Survivor)", "2 (Artifact of Command)", "3", "4", "5", "6" });
+            checkedListBox8.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox8.Location = new Point(349, 524);
             checkedListBox8.Name = "checkedListBox8";
             checkedListBox8.Size = new Size(390, 112);
@@ -244,7 +244,7 @@
             // 
             checkedListBox9.CheckOnClick = true;
             checkedListBox9.FormattingEnabled = true;
-            checkedListBox9.Items.AddRange(new object[] { "1", "2", "3", "4", "5 (Environment Log)", "6" });
+            checkedListBox9.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             checkedListBox9.Location = new Point(12, 670);
             checkedListBox9.Name = "checkedListBox9";
             checkedListBox9.Size = new Size(331, 112);
@@ -254,7 +254,7 @@
             // 
             checkedListBox10.CheckOnClick = true;
             checkedListBox10.FormattingEnabled = true;
-            checkedListBox10.Items.AddRange(new object[] { "1 (Environment Log, Artifact of Origin)", "2 (Environment Log, Artifact of Origin, Acrid Prism, Mercenary Prism)" });
+            checkedListBox10.Items.AddRange(new object[] { "1", "2" });
             checkedListBox10.Location = new Point(349, 670);
             checkedListBox10.Name = "checkedListBox10";
             checkedListBox10.Size = new Size(390, 112);
