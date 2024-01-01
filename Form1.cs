@@ -1,4 +1,3 @@
-#pragma warning disable CS8622
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +14,11 @@ namespace RORRVariantSelector
 {
     public partial class Form1 : Form {
 
-        private string? stagesFolder;
+        private string stagesFolder;
 
         private Size oldSize;
 
-        private readonly string[] stageNames = [
+        private readonly string[] stageNames = new string[] {
             "desolateForest",
             "driedLake",
             "dampCaverns",
@@ -30,9 +29,9 @@ namespace RORRVariantSelector
             "hiveCluster",
             "templeOfTheElders",
             "riskOfRain"
-        ];
+        };
 
-        private readonly string[][][] stageVariantsSecrets = [
+        private readonly string[][][] stageVariantsSecrets = new string[][][] {
             StageVariantsSecrets.desolateForest,
             StageVariantsSecrets.driedLake,
             StageVariantsSecrets.dampCaverns,
@@ -43,13 +42,13 @@ namespace RORRVariantSelector
             StageVariantsSecrets.hiveCluster,
             StageVariantsSecrets.templeOfTheElders,
             StageVariantsSecrets.riskOfRain
-        ];
+        };
 
         private CheckedListBox[] checkedListBoxes;
         public Form1() {
             InitializeComponent();
             button4.Click += button1_Click;
-            checkedListBoxes = [
+            checkedListBoxes = new CheckedListBox[] {
                 checkedListBox1,
                 checkedListBox2,
                 checkedListBox3,
@@ -60,13 +59,13 @@ namespace RORRVariantSelector
                 checkedListBox8,
                 checkedListBox9,
                 checkedListBox10
-            ];
+            };
         }
 
         private void Form1_Load(object sender, EventArgs e) {
             Directory.CreateDirectory("stages");
             
-            button5_Click(null!, null!);
+            button5_Click(null, null);
             for (int i = 0; i < checkedListBoxes.Length; i++) {
                 CheckedListBox clb = checkedListBoxes[i];
                 clb.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
@@ -96,8 +95,8 @@ namespace RORRVariantSelector
                     Path.DirectorySeparatorChar + "data" +
                     Path.DirectorySeparatorChar + "stages" +
                     Path.DirectorySeparatorChar;
-
-                if (Path.Exists(stages)) {
+                
+                if (Directory.Exists(stages)) {
                     stagesFolder = stages;
                     foreach (string stage in GetAllStageVariantsNames()) {
                         try {
@@ -173,7 +172,7 @@ namespace RORRVariantSelector
         private string[] GetAllStageVariantsNames() {
             List<string> stageVariantsNames = new List<string>();
             for (int i = 1; i <= 6; i++) {
-                foreach (string stageName in stageNames.SkipLast(1)) {
+                foreach (string stageName in stageNames.Take(stageNames.Length-1)) {
                     stageVariantsNames.Add($"{stageName}_{i}.rorlvl");
                 }
             }
