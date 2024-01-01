@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RORRVariantSelector {
-    internal class StageVariantsSecrets {
+    internal static class StageVariantsSecrets {
         public static string[][] desolateForest = [
             [
                 
