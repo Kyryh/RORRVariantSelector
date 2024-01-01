@@ -48,6 +48,11 @@ namespace RORRVariantSelector
         public Form1() {
             InitializeComponent();
             button4.Click += button1_Click;
+            button1.Click += button1_Click;
+            button2.Click += button2_Click;
+            button3.Click += button3_Click;
+            button5.Click += button5_Click;
+            button6.Click += button6_Click;
             checkedListBoxes = new CheckedListBox[] {
                 checkedListBox1,
                 checkedListBox2,
