@@ -30,365 +30,416 @@ namespace RORRVariantSelector
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            checkedListBox1 = new CheckedListBox();
-            checkedListBox2 = new CheckedListBox();
-            label2 = new Label();
-            label1 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            checkedListBox3 = new CheckedListBox();
-            checkedListBox4 = new CheckedListBox();
-            checkedListBox5 = new CheckedListBox();
-            checkedListBox6 = new CheckedListBox();
-            label10 = new Label();
-            checkedListBox7 = new CheckedListBox();
-            checkedListBox8 = new CheckedListBox();
-            checkedListBox9 = new CheckedListBox();
-            checkedListBox10 = new CheckedListBox();
-            openFileDialog1 = new OpenFileDialog();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            panel2 = new Panel();
-            button6 = new Button();
-            button5 = new Button();
-            panel1 = new Panel();
-            button4 = new Button();
-            panel2.SuspendLayout();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox9 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox10 = new System.Windows.Forms.CheckedListBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // checkedListBox1
             // 
-            checkedListBox1.CheckOnClick = true;
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox1.Location = new Point(12, 86);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(327, 112);
-            checkedListBox1.TabIndex = 0;
+            this.checkedListBox1.CheckOnClick = true;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox1.Location = new System.Drawing.Point(9, 79);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(281, 94);
+            this.checkedListBox1.TabIndex = 0;
             // 
             // checkedListBox2
             // 
-            checkedListBox2.CheckOnClick = true;
-            checkedListBox2.FormattingEnabled = true;
-            checkedListBox2.Items.AddRange(new object[] { "1", "2", "3", "4 ", "5", "6" });
-            checkedListBox2.Location = new Point(345, 86);
-            checkedListBox2.Name = "checkedListBox2";
-            checkedListBox2.Size = new Size(394, 112);
-            checkedListBox2.TabIndex = 1;
+            this.checkedListBox2.CheckOnClick = true;
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4 ",
+            "5",
+            "6"});
+            this.checkedListBox2.Location = new System.Drawing.Point(295, 79);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(338, 94);
+            this.checkedListBox2.TabIndex = 1;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15F);
-            label2.Location = new Point(345, 55);
-            label2.Name = "label2";
-            label2.Size = new Size(104, 28);
-            label2.TabIndex = 2;
-            label2.Text = "Dried Lake";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label2.Location = new System.Drawing.Point(296, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 28);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Dried Lake";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F);
-            label1.Location = new Point(12, 55);
-            label1.Name = "label1";
-            label1.Size = new Size(147, 28);
-            label1.TabIndex = 3;
-            label1.Text = "Desolate Forest";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label1.Location = new System.Drawing.Point(10, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 28);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Desolate Forest";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15F);
-            label3.Location = new Point(12, 201);
-            label3.Name = "label3";
-            label3.Size = new Size(138, 28);
-            label3.TabIndex = 4;
-            label3.Text = "Damp Caverns";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label3.Location = new System.Drawing.Point(10, 176);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 28);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Damp Caverns";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15F);
-            label4.Location = new Point(345, 201);
-            label4.Name = "label4";
-            label4.Size = new Size(124, 28);
-            label4.TabIndex = 5;
-            label4.Text = "Sky Meadow";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label4.Location = new System.Drawing.Point(296, 176);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(124, 28);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Sky Meadow";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 15F);
-            label5.Location = new Point(10, 347);
-            label5.Name = "label5";
-            label5.Size = new Size(134, 28);
-            label5.TabIndex = 6;
-            label5.Text = "Ancient Valley";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label5.Location = new System.Drawing.Point(10, 304);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(134, 28);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Ancient Valley";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 15F);
-            label6.Location = new Point(349, 347);
-            label6.Name = "label6";
-            label6.Size = new Size(138, 28);
-            label6.TabIndex = 7;
-            label6.Text = "Sunken Tombs";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label6.Location = new System.Drawing.Point(296, 304);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(138, 28);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Sunken Tombs";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 15F);
-            label7.Location = new Point(12, 493);
-            label7.Name = "label7";
-            label7.Size = new Size(156, 28);
-            label7.TabIndex = 8;
-            label7.Text = "Magma Barracks";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label7.Location = new System.Drawing.Point(10, 447);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(156, 28);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Magma Barracks";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 15F);
-            label8.Location = new Point(349, 493);
-            label8.Name = "label8";
-            label8.Size = new Size(116, 28);
-            label8.TabIndex = 9;
-            label8.Text = "Hive Cluster";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label8.Location = new System.Drawing.Point(293, 447);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 28);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Hive Cluster";
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 15F);
-            label9.Location = new Point(12, 639);
-            label9.Name = "label9";
-            label9.Size = new Size(187, 28);
-            label9.TabIndex = 10;
-            label9.Text = "Temple of the Elders";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label9.Location = new System.Drawing.Point(10, 577);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(187, 28);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Temple of the Elders";
             // 
             // checkedListBox3
             // 
-            checkedListBox3.CheckOnClick = true;
-            checkedListBox3.FormattingEnabled = true;
-            checkedListBox3.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox3.Location = new Point(12, 232);
-            checkedListBox3.Name = "checkedListBox3";
-            checkedListBox3.Size = new Size(331, 112);
-            checkedListBox3.TabIndex = 11;
+            this.checkedListBox3.CheckOnClick = true;
+            this.checkedListBox3.FormattingEnabled = true;
+            this.checkedListBox3.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox3.Location = new System.Drawing.Point(9, 207);
+            this.checkedListBox3.Name = "checkedListBox3";
+            this.checkedListBox3.Size = new System.Drawing.Size(284, 94);
+            this.checkedListBox3.TabIndex = 11;
             // 
             // checkedListBox4
             // 
-            checkedListBox4.CheckOnClick = true;
-            checkedListBox4.FormattingEnabled = true;
-            checkedListBox4.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox4.Location = new Point(349, 232);
-            checkedListBox4.Name = "checkedListBox4";
-            checkedListBox4.Size = new Size(390, 112);
-            checkedListBox4.TabIndex = 12;
+            this.checkedListBox4.CheckOnClick = true;
+            this.checkedListBox4.FormattingEnabled = true;
+            this.checkedListBox4.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox4.Location = new System.Drawing.Point(298, 207);
+            this.checkedListBox4.Name = "checkedListBox4";
+            this.checkedListBox4.Size = new System.Drawing.Size(335, 94);
+            this.checkedListBox4.TabIndex = 12;
             // 
             // checkedListBox5
             // 
-            checkedListBox5.CheckOnClick = true;
-            checkedListBox5.FormattingEnabled = true;
-            checkedListBox5.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox5.Location = new Point(12, 378);
-            checkedListBox5.Name = "checkedListBox5";
-            checkedListBox5.Size = new Size(331, 112);
-            checkedListBox5.TabIndex = 13;
+            this.checkedListBox5.CheckOnClick = true;
+            this.checkedListBox5.FormattingEnabled = true;
+            this.checkedListBox5.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox5.Location = new System.Drawing.Point(9, 335);
+            this.checkedListBox5.Name = "checkedListBox5";
+            this.checkedListBox5.Size = new System.Drawing.Size(284, 94);
+            this.checkedListBox5.TabIndex = 13;
             // 
             // checkedListBox6
             // 
-            checkedListBox6.CheckOnClick = true;
-            checkedListBox6.FormattingEnabled = true;
-            checkedListBox6.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox6.Location = new Point(349, 378);
-            checkedListBox6.Name = "checkedListBox6";
-            checkedListBox6.Size = new Size(390, 112);
-            checkedListBox6.TabIndex = 14;
+            this.checkedListBox6.CheckOnClick = true;
+            this.checkedListBox6.FormattingEnabled = true;
+            this.checkedListBox6.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox6.Location = new System.Drawing.Point(298, 335);
+            this.checkedListBox6.Name = "checkedListBox6";
+            this.checkedListBox6.Size = new System.Drawing.Size(335, 94);
+            this.checkedListBox6.TabIndex = 14;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 15F);
-            label10.Location = new Point(349, 639);
-            label10.Name = "label10";
-            label10.Size = new Size(113, 28);
-            label10.TabIndex = 15;
-            label10.Text = "Risk of Rain";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.label10.Location = new System.Drawing.Point(296, 577);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 28);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Risk of Rain";
             // 
             // checkedListBox7
             // 
-            checkedListBox7.CheckOnClick = true;
-            checkedListBox7.FormattingEnabled = true;
-            checkedListBox7.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox7.Location = new Point(12, 524);
-            checkedListBox7.Name = "checkedListBox7";
-            checkedListBox7.Size = new Size(331, 112);
-            checkedListBox7.TabIndex = 16;
+            this.checkedListBox7.CheckOnClick = true;
+            this.checkedListBox7.FormattingEnabled = true;
+            this.checkedListBox7.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox7.Location = new System.Drawing.Point(9, 480);
+            this.checkedListBox7.Name = "checkedListBox7";
+            this.checkedListBox7.Size = new System.Drawing.Size(284, 94);
+            this.checkedListBox7.TabIndex = 16;
             // 
             // checkedListBox8
             // 
-            checkedListBox8.CheckOnClick = true;
-            checkedListBox8.FormattingEnabled = true;
-            checkedListBox8.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox8.Location = new Point(349, 524);
-            checkedListBox8.Name = "checkedListBox8";
-            checkedListBox8.Size = new Size(390, 112);
-            checkedListBox8.TabIndex = 17;
+            this.checkedListBox8.CheckOnClick = true;
+            this.checkedListBox8.FormattingEnabled = true;
+            this.checkedListBox8.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox8.Location = new System.Drawing.Point(298, 480);
+            this.checkedListBox8.Name = "checkedListBox8";
+            this.checkedListBox8.Size = new System.Drawing.Size(335, 94);
+            this.checkedListBox8.TabIndex = 17;
             // 
             // checkedListBox9
             // 
-            checkedListBox9.CheckOnClick = true;
-            checkedListBox9.FormattingEnabled = true;
-            checkedListBox9.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            checkedListBox9.Location = new Point(12, 670);
-            checkedListBox9.Name = "checkedListBox9";
-            checkedListBox9.Size = new Size(331, 112);
-            checkedListBox9.TabIndex = 18;
+            this.checkedListBox9.CheckOnClick = true;
+            this.checkedListBox9.FormattingEnabled = true;
+            this.checkedListBox9.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.checkedListBox9.Location = new System.Drawing.Point(9, 608);
+            this.checkedListBox9.Name = "checkedListBox9";
+            this.checkedListBox9.Size = new System.Drawing.Size(284, 94);
+            this.checkedListBox9.TabIndex = 18;
             // 
             // checkedListBox10
             // 
-            checkedListBox10.CheckOnClick = true;
-            checkedListBox10.FormattingEnabled = true;
-            checkedListBox10.Items.AddRange(new object[] { "1", "2" });
-            checkedListBox10.Location = new Point(349, 670);
-            checkedListBox10.Name = "checkedListBox10";
-            checkedListBox10.Size = new Size(390, 112);
-            checkedListBox10.TabIndex = 19;
+            this.checkedListBox10.CheckOnClick = true;
+            this.checkedListBox10.FormattingEnabled = true;
+            this.checkedListBox10.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.checkedListBox10.Location = new System.Drawing.Point(298, 608);
+            this.checkedListBox10.Name = "checkedListBox10";
+            this.checkedListBox10.Size = new System.Drawing.Size(335, 94);
+            this.checkedListBox10.TabIndex = 19;
             // 
             // openFileDialog1
             // 
-            openFileDialog1.FileName = "Risk of Rain Returns.exe";
-            openFileDialog1.Filter = "RORR executable|*.exe|All files|*.*";
+            this.openFileDialog1.FileName = "Risk of Rain Returns.exe";
+            this.openFileDialog1.Filter = "RORR executable|*.exe|All files|*.*";
             // 
             // button1
             // 
-            button1.Location = new Point(23, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(134, 40);
-            button1.TabIndex = 20;
-            button1.Text = "Load game files";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Location = new System.Drawing.Point(20, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 35);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Load game files";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(163, 12);
-            button2.Name = "button2";
-            button2.Size = new Size(134, 40);
-            button2.TabIndex = 21;
-            button2.Text = "Save variants selection";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.button2.Location = new System.Drawing.Point(140, 10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 35);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Save variants selection";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(583, 12);
-            button3.Name = "button3";
-            button3.Size = new Size(134, 40);
-            button3.TabIndex = 22;
-            button3.Text = "Restore variants";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            this.button3.Location = new System.Drawing.Point(500, 10);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 35);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Restore variants";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
-            panel2.Controls.Add(button6);
-            panel2.Controls.Add(button5);
-            panel2.Controls.Add(button3);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(button1);
-            panel2.Controls.Add(checkedListBox10);
-            panel2.Controls.Add(checkedListBox9);
-            panel2.Controls.Add(checkedListBox8);
-            panel2.Controls.Add(checkedListBox7);
-            panel2.Controls.Add(label10);
-            panel2.Controls.Add(checkedListBox6);
-            panel2.Controls.Add(checkedListBox5);
-            panel2.Controls.Add(checkedListBox4);
-            panel2.Controls.Add(checkedListBox3);
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label8);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(label2);
-            panel2.Controls.Add(checkedListBox2);
-            panel2.Controls.Add(checkedListBox1);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(752, 791);
-            panel2.TabIndex = 23;
-            panel2.Visible = false;
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.checkedListBox10);
+            this.panel2.Controls.Add(this.checkedListBox9);
+            this.panel2.Controls.Add(this.checkedListBox8);
+            this.panel2.Controls.Add(this.checkedListBox7);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.checkedListBox6);
+            this.panel2.Controls.Add(this.checkedListBox5);
+            this.panel2.Controls.Add(this.checkedListBox4);
+            this.panel2.Controls.Add(this.checkedListBox3);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.checkedListBox2);
+            this.panel2.Controls.Add(this.checkedListBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(645, 711);
+            this.panel2.TabIndex = 23;
+            this.panel2.Visible = false;
             // 
             // button6
             // 
-            button6.Location = new Point(443, 12);
-            button6.Name = "button6";
-            button6.Size = new Size(134, 40);
-            button6.TabIndex = 24;
-            button6.Text = "Deselect all";
-            button6.UseVisualStyleBackColor = true;
-            button6.Click += button6_Click;
+            this.button6.Location = new System.Drawing.Point(380, 10);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(115, 35);
+            this.button6.TabIndex = 24;
+            this.button6.Text = "Deselect all";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(303, 12);
-            button5.Name = "button5";
-            button5.Size = new Size(134, 40);
-            button5.TabIndex = 23;
-            button5.Text = "Select all";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
+            this.button5.Location = new System.Drawing.Point(260, 10);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(115, 35);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "Select all";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            panel1.Controls.Add(button4);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(752, 791);
-            panel1.TabIndex = 23;
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(645, 711);
+            this.panel1.TabIndex = 23;
             // 
             // button4
             // 
-            button4.Location = new Point(100, 100);
-            button4.MaximumSize = new Size(100, 40);
-            button4.MinimumSize = new Size(100, 40);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 40);
-            button4.TabIndex = 0;
-            button4.Text = "Load game files";
-            button4.UseVisualStyleBackColor = true;
+            this.button4.Location = new System.Drawing.Point(100, 100);
+            this.button4.MaximumSize = new System.Drawing.Size(100, 40);
+            this.button4.MinimumSize = new System.Drawing.Size(100, 40);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(100, 40);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "Load game files";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(752, 791);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Form1";
-            Text = "RORRVariantSelector";
-            Load += Form1_Load;
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(645, 711);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.Text = "RORRVariantSelector";
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
