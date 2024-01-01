@@ -18,9 +18,9 @@ You can restore the original variants whenever you want with the **Restore varia
 
 ## FAQ
 ### How does it work?
-It first copies all of the *.rorlvl files located in /data/stages/ to a backup folder, then it replaces files only the checked variations.
+It first copies all of the *.rorlvl files located in /data/stages/ to a backup folder, then it replaces files only the checked variations
 
-I know, it's a little bit crude but I couldn't find a way to directly mod the game so this is the next best thing.
+I know, it's a little bit crude but I couldn't find a way to directly mod the game so this is the next best thing
 
 ### Can I make so that only one stage is chosen (e.g. always Desolate Forest instead of choosing between Desolate Forest and Dried Lake)?
 Not at the moment
