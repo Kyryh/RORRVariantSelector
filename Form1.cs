@@ -102,13 +102,13 @@ namespace RORRVariantSelector
                 
                 if (Directory.Exists(stages)) {
                     stagesFolder = stages;
-                    foreach (string stage in GetAllStageVariantsNames()) {
-                        try {
+                    try {
+                        foreach (string stage in GetAllStageVariantsNames()) {
                             File.Copy(stagesFolder + stage, "stages" + Path.DirectorySeparatorChar + stage);
-                        } catch (IOException) { }
-                        // raises an exception when the files have already
-                        // been stored, so we don't need to copy them again
-                    }
+                        }
+                    } catch (IOException) { }
+                    // if it raises an exception then the files have
+                    // already been copied, no need to copy them again
 
                     Size = oldSize;
                     panel1.Hide();
