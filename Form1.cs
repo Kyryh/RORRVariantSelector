@@ -9,6 +9,19 @@ namespace RORRVariantSelector
         private string? stagesFolder;
 
         private Size oldSize;
+
+        private string[] stageNames = [
+            "desolateForest",
+            "driedLake",
+            "dampCaverns",
+            "skyMeadow",
+            "ancientValley",
+            "sunkenTombs",
+            "magmaBarracks",
+            "hiveCluster",
+            "templeOfTheElders",
+            "riskOfRain"
+        ];
         public Form1() {
             InitializeComponent();
             button4.Click += button1_Click;
@@ -69,19 +82,11 @@ namespace RORRVariantSelector
 
         // Save variants selection button
         private void button2_Click(object sender, EventArgs e) {
-            //checkedListBox1.CheckedIndices
-            string[] stageNames = [
-                "desolateForest",
-                "driedLake",
-                "dampCaverns",
-                "skyMeadow",
-                "ancientValley",
-                "sunkenTombs",
-                "magmaBarracks",
-                "hiveCluster",
-                "templeOfTheElders",
-                "riskOfRain"
-            ];
+            if (panel2.Controls.OfType<CheckedListBox>().Any(clb => clb.CheckedIndices.Count == 0)) {
+                MessageBox.Show("One of the stages has no variants selected, select all of them if you don't want to change that stage");
+                return;
+            }
+            
             for (int i = 0; i < 10; i++) {
                 CheckedListBox currentListBox = (CheckedListBox)panel2.Controls.Find($"checkedListBox{i + 1}", false)[0];
                 int j = 0;
@@ -99,6 +104,7 @@ namespace RORRVariantSelector
                         j = 0; // loop back when you reach the last variant
                 }
             }
+            MessageBox.Show("Variants selection saved!");
         }
 
         // Restore variants button
@@ -130,15 +136,9 @@ namespace RORRVariantSelector
         private string[] GetAllStageVariantsNames() {
             List<string> stageVariantsNames = new List<string>();
             for (int i = 1; i <= 6; i++) {
-                stageVariantsNames.Add($"desolateForest_{i}.rorlvl");
-                stageVariantsNames.Add($"driedLake_{i}.rorlvl");
-                stageVariantsNames.Add($"dampCaverns_{i}.rorlvl");
-                stageVariantsNames.Add($"skyMeadow_{i}.rorlvl");
-                stageVariantsNames.Add($"ancientValley_{i}.rorlvl");
-                stageVariantsNames.Add($"sunkenTombs_{i}.rorlvl");
-                stageVariantsNames.Add($"magmaBarracks_{i}.rorlvl");
-                stageVariantsNames.Add($"hiveCluster_{i}.rorlvl");
-                stageVariantsNames.Add($"templeOfTheElders_{i}.rorlvl");
+                foreach (string stageName in stageNames.SkipLast(1)) {
+                    stageVariantsNames.Add($"{stageName}_{i}.rorlvl");
+                }
             }
             stageVariantsNames.Add($"riskOfRain_1.rorlvl");
             stageVariantsNames.Add($"riskOfRain_2.rorlvl");
