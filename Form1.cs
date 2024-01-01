@@ -61,7 +61,7 @@ namespace RORRVariantSelector
             };
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
+        protected override void OnLoad(EventArgs e) {
             Directory.CreateDirectory("stages");
             
             button5_Click(null, null);
