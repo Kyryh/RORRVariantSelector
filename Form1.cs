@@ -35,12 +35,12 @@ namespace RORRVariantSelector
             checkedListBox8.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
             checkedListBox9.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
             checkedListBox10.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            button5_Click(null!, null!);
         }
 
         private void Form1_Load(object sender, EventArgs e) {
             Directory.CreateDirectory("stages");
             
+            button5_Click(null!, null!);
             oldSize = Size;
             Size = new Size(300, 300);
             CenterToScreen();
