@@ -83,15 +83,17 @@ namespace RORRVariantSelector
                 "riskOfRain"
             ];
             for (int i = 0; i < 10; i++) {
-                CheckedListBox currentListBox = (CheckedListBox)Controls.Find($"checkedListBox{i + 1}", false)[0];
+                CheckedListBox currentListBox = (CheckedListBox)panel2.Controls.Find($"checkedListBox{i + 1}", false)[0];
                 int j = 0;
                 for (int k = 0; k < currentListBox.Items.Count; k++) {
+                    string localStage = $"stages{Path.DirectorySeparatorChar}{stageNames[i]}_{currentListBox.CheckedIndices[j] + 1}.rorlvl";
+                    string gameFilesStage = $"{stagesFolder}{stageNames[i]}_{k + 1}.rorlvl";
                     File.Copy(
-                        $"stages{Path.DirectorySeparatorChar}{stageNames[i]}_{currentListBox.CheckedIndices[j] + 1}.rorlvl", // local stages folder
-                        $"{stagesFolder}{stageNames[i]}_{k + 1}.rorlvl", // game stages folder
+                        localStage,
+                        gameFilesStage,
                         true
                     );
-
+                    //MessageBox.Show("COPY " + localStage + " TO " + gameFilesStage);
                     j++;
                     if (j >= currentListBox.CheckedIndices.Count)
                         j = 0; // loop back when you reach the last variant
