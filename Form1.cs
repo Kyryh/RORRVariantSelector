@@ -1,5 +1,6 @@
 #pragma warning disable CS8622
 using System.Collections;
+using System.Windows.Forms;
 
 namespace RORRVariantSelector
 {
@@ -21,10 +22,10 @@ namespace RORRVariantSelector
             checkedListBox8.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
             checkedListBox9.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
             checkedListBox10.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
+            button5_Click(null!, null!);
         }
 
         private void Form1_Load(object sender, EventArgs e) {
-            string currentPath = Path.GetDirectoryName(Application.ExecutablePath)! + Path.DirectorySeparatorChar;
             Directory.CreateDirectory("stages");
             
             oldSize = Size;
@@ -33,8 +34,9 @@ namespace RORRVariantSelector
 
         }
 
+        // to remove the annoying blue rectangle when checking a box
         private void checkedListBoxGeneral_SelectedIndexChanged(object sender, EventArgs e) {
-            ((CheckedListBox)sender).ClearSelected();
+            ((CheckedListBox)sender).ClearSelected(); 
         }
 
         // Load game files button
@@ -62,14 +64,39 @@ namespace RORRVariantSelector
                 } else {
                     MessageBox.Show("Wrong executable selected");
                 }
-
-                //openFileDialog1.FileName
             }
         }
 
         // Save variants selection button
         private void button2_Click(object sender, EventArgs e) {
+            //checkedListBox1.CheckedIndices
+            string[] stageNames = [
+                "desolateForest",
+                "driedLake",
+                "dampCaverns",
+                "skyMeadow",
+                "ancientValley",
+                "sunkenTombs",
+                "magmaBarracks",
+                "hiveCluster",
+                "templeOfTheElders",
+                "riskOfRain"
+            ];
+            for (int i = 0; i < 10; i++) {
+                CheckedListBox currentListBox = (CheckedListBox)Controls.Find($"checkedListBox{i + 1}", false)[0];
+                int j = 0;
+                for (int k = 0; k < currentListBox.Items.Count; k++) {
+                    File.Copy(
+                        $"stages{Path.DirectorySeparatorChar}{stageNames[i]}_{currentListBox.CheckedIndices[j] + 1}.rorlvl", // local stages folder
+                        $"{stagesFolder}{stageNames[i]}_{k + 1}.rorlvl", // game stages folder
+                        true
+                    );
 
+                    j++;
+                    if (j >= currentListBox.CheckedIndices.Count)
+                        j = 0; // loop back when you reach the last variant
+                }
+            }
         }
 
         // Restore variants button
@@ -115,5 +142,6 @@ namespace RORRVariantSelector
             stageVariantsNames.Add($"riskOfRain_2.rorlvl");
             return stageVariantsNames.ToArray();
         }
+
     }
 }
