@@ -10,7 +10,7 @@ namespace RORRVariantSelector
 
         private Size oldSize;
 
-        private string[] stageNames = [
+        private readonly string[] stageNames = [
             "desolateForest",
             "driedLake",
             "dampCaverns",
@@ -22,25 +22,53 @@ namespace RORRVariantSelector
             "templeOfTheElders",
             "riskOfRain"
         ];
+
+        private readonly string[][][] stageVariantsSecrets = [
+            StageVariantsSecrets.desolateForest,
+            StageVariantsSecrets.driedLake,
+            StageVariantsSecrets.dampCaverns,
+            StageVariantsSecrets.skyMeadow,
+            StageVariantsSecrets.ancientValley,
+            StageVariantsSecrets.sunkenTombs,
+            StageVariantsSecrets.magmaBarracks,
+            StageVariantsSecrets.hiveCluster,
+            StageVariantsSecrets.templeOfTheElders,
+            StageVariantsSecrets.riskOfRain
+        ];
+
+        private CheckedListBox[] checkedListBoxes;
         public Form1() {
             InitializeComponent();
             button4.Click += button1_Click;
-            checkedListBox1.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox2.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox3.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox4.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox5.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox6.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox7.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox8.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox9.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
-            checkedListBox10.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
+            checkedListBoxes = [
+                checkedListBox1,
+                checkedListBox2,
+                checkedListBox3,
+                checkedListBox4,
+                checkedListBox5,
+                checkedListBox6,
+                checkedListBox7,
+                checkedListBox8,
+                checkedListBox9,
+                checkedListBox10
+            ];
         }
 
         private void Form1_Load(object sender, EventArgs e) {
             Directory.CreateDirectory("stages");
             
             button5_Click(null!, null!);
+            for (int i = 0; i < checkedListBoxes.Length; i++) {
+                CheckedListBox clb = checkedListBoxes[i];
+                clb.SelectedIndexChanged += checkedListBoxGeneral_SelectedIndexChanged;
+                for (int j = 0; j < clb.Items.Count; j++) {
+                    if (stageVariantsSecrets[i][j].Length > 0)
+                        clb.Items[j] = clb.Items[j] + " (" + string.Join(", ", stageVariantsSecrets[i][j]) + ")";
+                }
+            }
+
+            
+
             oldSize = Size;
             Size = new Size(300, 300);
             CenterToScreen();
@@ -88,7 +116,7 @@ namespace RORRVariantSelector
             }
             
             for (int i = 0; i < 10; i++) {
-                CheckedListBox currentListBox = (CheckedListBox)panel2.Controls.Find($"checkedListBox{i + 1}", false)[0];
+                CheckedListBox currentListBox = checkedListBoxes[i];
                 int j = 0;
                 for (int k = 0; k < currentListBox.Items.Count; k++) {
                     string localStage = $"stages{Path.DirectorySeparatorChar}{stageNames[i]}_{currentListBox.CheckedIndices[j] + 1}.rorlvl";
