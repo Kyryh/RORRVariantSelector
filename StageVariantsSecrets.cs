@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RORRVariantSelector {
+﻿namespace RORRVariantSelector {
     internal static class StageVariantsSecrets {
+
+
         public static string[][] desolateForest = [
             [
                 
