@@ -20,7 +20,6 @@
 
             },
             new string[] {
-                "Environment Log"
             }
         };
         public static string[][] driedLake = new string[][] {
@@ -29,7 +28,6 @@
             },
             new string[] {
                 "Artifact of Kin",
-                "Environment Log"
             },
             new string[] {
                 "Artifact of Kin",
@@ -124,7 +122,6 @@
             },
             new string[] {
                 "Artifact of Dissonance Shard",
-                "Environment Log"
             },
             new string[] {
 
@@ -186,7 +183,6 @@
 
             },
             new string[] {
-                "Environment Log"
             },
             new string[] {
 
@@ -195,13 +191,11 @@
         public static string[][] riskOfRain = new string[][] {
             new string[] {
                 "Artifact of Origin",
-                "Environment Log",
                 "Acrid Prism",
                 "Mercenary Prism"
             },
             new string[] {
                 "Artifact of Origin",
-                "Environment Log"
             }
         };
 
